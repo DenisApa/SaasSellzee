@@ -19,7 +19,7 @@
       <nav class="header__menu menu">
         <ul class="menu__list">
           <li class="menu__item"><a href="#intro" class="menu__link">Home</a></li>
-          <li class="menu__item"><a href="#intro" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
           <li class="menu__item"><a href="#intro" class="menu__link">Contact</a></li>
           <li class="menu__item"><a href="#intro" class="menu__link">Testimonial</a></li>
           <li class="menu__item"><a href="#intro" class="menu__link">Priceing</a></li>
@@ -36,7 +36,7 @@
       <div id="hamburger-menu" class="hamburger-menu">
         <ul class="menu-box">
           <li><a href="#intro" class="nav__link">Home</a></li>
-          <li><a href="#intro" class="nav__link">About</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
           <li><a href="#intro" class="nav__link">Contact</a></li>
           <li><a href="#intro" class="nav__link">Testimonial</a></li>
           <li><a href="#intro" class="nav__link">Priceing</a></li>
@@ -96,12 +96,45 @@
       </div>
     </div>
 
+    <section class="about" id="about">
+      <div class="about__container container">
+        <div class="about__transfer">
+          <img class="about__ibg" src="./images/content/about-transfer/ibg.png" alt="">
+          <img class="about__image about__image-1" src="./images/content/about-transfer/image1.png" alt="">
+          <img class="about__image about__image-2" src="./images/content/about-transfer/image2.png" alt="">
+        </div>
+        <div class="about__info">
+          <p class="about__suptitle section-suptitle">Lorem ipsum dolor sit ame</p>
+          <h1 class="about__title section-title">Simple Solutions for Complex Connections</h1>
+          <p class="about__txt section-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed donec gravida
+            feugiat neque, ipsum faucibus. Pharetra vel suspendisse mi odio a velit feugiat sapien.</p>
+          <div class="about__confirmation-wrap">
+            <div class="about__confirmation">
+              <svg class="about__svg" width="24" height="24">
+                <use xlink:href="#check" width="24" height="24"></use>
+              </svg>
+              High Analysis
+            </div>
+            <div class="about__confirmation">
+              <svg class="about__svg" width="24" height="24">
+                <use xlink:href="#check" width="24" height="24"></use>
+              </svg>
+              Certified Institute
+            </div>
+          </div>
+          <div class="about__btns-block btns-block">
+            <a href="#" class="about__btn btn btn-fill">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="commited">
       <div class="commited__container container">
         <div class="commited__item-column">
           <div class="commited__info-block">
             <p class="commited__suptitle section-suptitle">Your Vision, Our Future.</p>
-            <h1 class="commited__title section-title">Committed to People, Committed</h1>
+            <h1 class="commited__title section-title-2">Committed to People, Committed</h1>
             <p class="commited__txt section-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <!-- <div class="commited__item item"> ... </div> -->
@@ -122,19 +155,19 @@
 
 
 <svg style="display: none;">
-  <symbol id="commited-1" width="55" height="57" viewBox="0 0 55 57" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="commited-1" fill="inherit" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M34.0634 49.8104V51.4758C34.0634 52.8011 33.0899 53.9036 31.8233 54.0912L31.4128 55.6042C31.1899 56.4252 30.4511 56.9999 29.5949 56.9999H25.5251C24.669 56.9999 23.9301 56.4252 23.7072 55.6042L23.3085 54.0912C22.0301 53.8918 21.0566 52.8011 21.0566 51.4641V49.7986C21.0566 48.9073 21.7721 48.1919 22.6634 48.1919H32.4566C33.348 48.2036 34.0634 48.919 34.0634 49.8104ZM41.6047 27.3623C41.6047 31.1505 40.1035 34.5869 37.664 37.1085C35.8109 39.032 34.6146 41.4832 34.2159 44.0987C34.0399 45.2246 33.0665 46.0573 31.9171 46.0573H23.2029C22.0653 46.0573 21.0801 45.2363 20.9159 44.1104C20.5054 41.495 19.2974 39.0085 17.4443 37.0968C15.0517 34.6104 13.5622 31.2326 13.527 27.5147C13.4449 19.7037 19.661 13.3821 27.4721 13.3234C35.2714 13.2648 41.6047 19.5746 41.6047 27.3623ZM29.1492 18.8592C29.1492 17.9913 28.4455 17.2759 27.5659 17.2759C21.9832 17.2759 17.4326 21.8148 17.4326 27.4092C17.4326 28.2771 18.1363 28.9925 19.0159 28.9925C19.8838 28.9925 20.5992 28.2888 20.5992 27.4092C20.5992 23.5623 23.7307 20.4425 27.5659 20.4425C28.4455 20.4425 29.1492 19.7388 29.1492 18.8592ZM27.5659 8.71418C28.4338 8.71418 29.1492 8.01047 29.1492 7.13085V1.58333C29.1492 0.71543 28.4455 0 27.5659 0C26.6863 0 25.9826 0.703702 25.9826 1.58333V7.13085C25.9826 8.01047 26.698 8.71418 27.5659 8.71418ZM8.92951 27.3505C8.92951 26.4826 8.22581 25.7672 7.34618 25.7672H1.79866C0.930762 25.7672 0.215332 26.4709 0.215332 27.3505C0.215332 28.2184 0.919034 28.9339 1.79866 28.9339H7.34618C8.22581 28.9339 8.92951 28.2302 8.92951 27.3505ZM53.3331 25.7672H47.7856C46.9177 25.7672 46.2023 26.4709 46.2023 27.3505C46.2023 28.2184 46.906 28.9339 47.7856 28.9339H53.3331C54.201 28.9339 54.9164 28.2302 54.9164 27.3505C54.9164 26.4826 54.2127 25.7672 53.3331 25.7672ZM12.1548 40.5332L8.22581 44.4622C7.6042 45.0838 7.6042 46.0807 8.22581 46.7024C8.53074 47.0073 8.94124 47.1598 9.34 47.1598C9.73876 47.1598 10.1493 47.0073 10.4542 46.7024L14.3832 42.7733C15.0048 42.1517 15.0048 41.1548 14.3832 40.5332C13.7733 39.9116 12.7647 39.9116 12.1548 40.5332ZM41.8628 14.637C42.2615 14.637 42.672 14.4845 42.977 14.1796L46.906 10.2506C47.5276 9.62899 47.5276 8.63208 46.906 8.01047C46.2844 7.38887 45.2874 7.38887 44.6658 8.01047L40.7368 11.9395C40.1152 12.5611 40.1152 13.558 40.7368 14.1796C41.0535 14.4845 41.4523 14.637 41.8628 14.637ZM12.1548 14.1679C12.4597 14.4728 12.8702 14.6253 13.269 14.6253C13.6678 14.6253 14.0783 14.4728 14.3832 14.1679C15.0048 13.5463 15.0048 12.5494 14.3832 11.9277L10.4542 7.99874C9.83259 7.37714 8.83568 7.37714 8.21408 7.99874C7.59247 8.62035 7.59247 9.61726 8.21408 10.2389L12.1548 14.1679ZM42.977 40.5332C42.3554 39.9116 41.3584 39.9116 40.7368 40.5332C40.1152 41.1548 40.1152 42.1517 40.7368 42.7733L44.6658 46.7024C44.9708 47.0073 45.3813 47.1598 45.78 47.1598C46.1788 47.1598 46.5893 47.0073 46.8942 46.7024C47.5158 46.0807 47.5158 45.0838 46.8942 44.4622L42.977 40.5332Z"
       fill="inherit" />
   </symbol>
 
-  <symbol id="commited-2" width="58" height="47" viewBox="0 0 58 47" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="commited-2" fill="inherit" xmlns="http://www.w3.org/2000/svg">
     <path d="M34.242 0.633789L0.065918 34.8098V40.3203H5.57633L39.7524 6.14431L34.242 0.633789Z" fill="inherit" />
     <path d="M57.0659 43.6592H0.065918V46.999H57.0659V43.6592Z" fill="inherit" />
     <path d="M57.0659 36.9805H16.7651V40.3203H57.0659V36.9805Z" fill="inherit" />
   </symbol>
 
-  <symbol id="commited-3" width="58" height="50" viewBox="0 0 58 50" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="commited-3" fill="inherit" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M30.2358 1.82422C30.2358 0.901848 29.4883 0.154297 28.5659 0.154297C27.6435 0.154297 26.896 0.901848 26.896 1.82422V8.97879C26.896 9.90116 27.6435 10.6487 28.5659 10.6487C29.4883 10.6487 30.2358 9.90116 30.2358 8.97879V1.82422Z"
       fill="inherit" />
@@ -158,7 +191,7 @@
       fill="inherit" />
   </symbol>
 
-  <symbol id="commited-4" width="58" height="57" viewBox="0 0 58 57" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="commited-4" fill="inherit" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M28.5722 16.3779C25.0983 16.3779 22.2722 19.204 22.2722 22.6779C22.2722 26.152 25.0983 28.9782 28.5722 28.9782C32.0453 28.9782 34.8708 26.152 34.8708 22.6779C34.8707 19.204 32.0453 16.3779 28.5722 16.3779Z"
       fill="inherit" />
@@ -167,7 +200,7 @@
       fill="inherit" />
   </symbol>
 
-  <symbol id="commited-5" width="47" height="57" viewBox="0 0 47 57" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="commited-5" fill="inherit" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M17.125 10.5406C18.0464 10.5406 18.7933 9.79364 18.7933 8.87232V1.72488C18.7051 -0.488554 15.5441 -0.486886 15.4568 1.72488V8.87244C15.4568 9.79375 16.2037 10.5406 17.125 10.5406Z"
       fill="inherit" />
@@ -189,5 +222,13 @@
     <path
       d="M35.5731 41.2406C35.5731 41.2294 35.5739 41.2183 35.5739 41.2071C34.02 41.2186 32.5535 40.6145 31.4551 39.5162C30.32 38.3805 29.7579 36.8861 29.7674 35.3948C28.2743 35.4061 26.7822 34.8415 25.6462 33.7074C23.3939 31.455 23.3939 27.7907 25.6459 25.5386L41.6214 9.56415C42.5321 8.65218 42.6083 7.09982 41.6278 6.11933C40.8116 5.30322 39.2629 5.02273 38.1716 6.11421L17.5675 26.7182L17.8399 26.9907C22.4942 31.645 22.4942 39.2181 17.8399 43.8724C17.1884 44.524 16.132 44.5238 15.4807 43.8724C14.8292 43.221 14.8292 42.1646 15.4807 41.5131C18.834 38.1597 18.834 32.7033 15.4807 29.3499C15.4807 29.3499 14.028 27.8964 14.0279 27.896C13.8112 27.6789 13.6542 27.4031 13.5828 27.0937L11.6738 18.8216C11.086 16.2742 8.38931 14.7976 5.91608 15.7052C5.25845 15.9465 4.82182 16.5734 4.82249 17.2738L4.84529 40.877L0.554548 45.1658C-0.0969588 45.8173 -0.0969588 46.8735 0.554548 47.5251L9.54085 56.5114C9.8537 56.8242 10.278 56.9999 10.7205 56.9999H27.1788C28.3781 56.9999 29.5062 56.5323 30.3554 55.6832L39.3695 46.6695C38.5868 46.3848 37.8694 45.9302 37.2636 45.3235C36.1737 44.2337 35.5731 42.7834 35.5731 41.2406Z"
       fill="inherit" />
+  </symbol>
+
+  <symbol id="check" width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M22.0659 11.0799V11.9999C22.0647 14.1563 21.3664 16.2545 20.0753 17.9817C18.7841 19.7088 16.9692 20.9723 14.9013 21.5838C12.8333 22.1952 10.6232 22.1218 8.60039 21.3744C6.5776 20.6271 4.85057 19.246 3.67688 17.4369C2.50318 15.6279 1.94571 13.4879 2.08759 11.3362C2.22948 9.18443 3.06312 7.13619 4.4642 5.49694C5.86527 3.85768 7.7587 2.71525 9.86211 2.24001C11.9655 1.76477 14.1662 1.9822 16.1359 2.85986"
+      stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M22.0659 4L12.0659 14.01L9.06592 11.01" stroke="inherit" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
   </symbol>
 </svg>
